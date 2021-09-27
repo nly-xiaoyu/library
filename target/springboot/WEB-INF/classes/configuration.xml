@@ -26,8 +26,16 @@
 
     <!-- mapper配置文件文件位置  -->
     <mappers>
-        <mapper class="edu.hunau.hyx.mapper.DeptMapper" />
-        <mapper class="edu.hunau.hyx.mapper.EmpMapper" />
+        <mapper class="edu.hunau.hyx.mapper.administratorMapper" />
+        <mapper class="edu.hunau.hyx.mapper.bookAppiontmentMapper" />
+        <mapper class="edu.hunau.hyx.mapper.bookMapper" />
+        <mapper class="edu.hunau.hyx.mapper.bookshelfMapper" />
+        <mapper class="edu.hunau.hyx.mapper.departmentMapper" />
+        <mapper class="edu.hunau.hyx.mapper.majorMapper" />
+        <mapper class="edu.hunau.hyx.mapper.noticeMapper" />
+        <mapper class="edu.hunau.hyx.mapper.studentBookMapper" />
+        <mapper class="edu.hunau.hyx.mapper.studentBorrowMapper" />
+        <mapper class="edu.hunau.hyx.mapper.studentMapper" />
+        <mapper class="edu.hunau.hyx.mapper.userMapper" />
     </mappers>
-
 </configuration>

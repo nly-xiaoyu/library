@@ -3,19 +3,19 @@ package edu.hunau.hyx.bean;
 public class Book {
     private Integer id;
 
-    private String bno;
-
     private String bname;
 
-    private String bauthor;
+    private Integer bno;
 
-    private Double bprice;
+    private String authoe;
 
-    private Integer bnum;
+    private Double price;
 
-    private String bshelf;
+    private Integer locnum;
 
-    private String bremark;
+    private String locarea;
+
+    private String ramark;
 
     public Integer getId() {
         return id;
@@ -23,14 +23,6 @@ public class Book {
 
     public void setId(Integer id) {
         this.id = id;
-    }
-
-    public String getBno() {
-        return bno;
-    }
-
-    public void setBno(String bno) {
-        this.bno = bno == null ? null : bno.trim();
     }
 
     public String getBname() {
@@ -41,43 +33,51 @@ public class Book {
         this.bname = bname == null ? null : bname.trim();
     }
 
-    public String getBauthor() {
-        return bauthor;
+    public Integer getBno() {
+        return bno;
     }
 
-    public void setBauthor(String bauthor) {
-        this.bauthor = bauthor == null ? null : bauthor.trim();
+    public void setBno(Integer bno) {
+        this.bno = bno;
     }
 
-    public Double getBprice() {
-        return bprice;
+    public String getAuthoe() {
+        return authoe;
     }
 
-    public void setBprice(Double bprice) {
-        this.bprice = bprice;
+    public void setAuthoe(String authoe) {
+        this.authoe = authoe == null ? null : authoe.trim();
     }
 
-    public Integer getBnum() {
-        return bnum;
+    public Double getPrice() {
+        return price;
     }
 
-    public void setBnum(Integer bnum) {
-        this.bnum = bnum;
+    public void setPrice(Double price) {
+        this.price = price;
     }
 
-    public String getBshelf() {
-        return bshelf;
+    public Integer getLocnum() {
+        return locnum;
     }
 
-    public void setBshelf(String bshelf) {
-        this.bshelf = bshelf == null ? null : bshelf.trim();
+    public void setLocnum(Integer locnum) {
+        this.locnum = locnum;
     }
 
-    public String getBremark() {
-        return bremark;
+    public String getLocarea() {
+        return locarea;
     }
 
-    public void setBremark(String bremark) {
-        this.bremark = bremark == null ? null : bremark.trim();
+    public void setLocarea(String locarea) {
+        this.locarea = locarea == null ? null : locarea.trim();
+    }
+
+    public String getRamark() {
+        return ramark;
+    }
+
+    public void setRamark(String ramark) {
+        this.ramark = ramark == null ? null : ramark.trim();
     }
 }

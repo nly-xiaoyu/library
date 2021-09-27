@@ -3,10 +3,11 @@
 <mapper namespace="edu.hunau.hyx.mapper.NoticeMapper">
   <resultMap id="BaseResultMap" type="edu.hunau.hyx.bean.Notice">
     <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="sender" jdbcType="VARCHAR" property="sender" />
-    <result column="receiver" jdbcType="VARCHAR" property="receiver" />
+    <result column="fromid" jdbcType="INTEGER" property="fromid" />
+    <result column="toid" jdbcType="INTEGER" property="toid" />
     <result column="message" jdbcType="VARCHAR" property="message" />
     <result column="time" jdbcType="TIMESTAMP" property="time" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -67,7 +68,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, sender, receiver, message, time
+    id, fromid, toid, message, time, status
   </sql>
   <select id="selectByExample" parameterType="edu.hunau.hyx.bean.NoticeExample" resultMap="BaseResultMap">
     select
@@ -103,10 +104,12 @@
     <selectKey keyProperty="id" order="BEFORE" resultType="java.lang.Integer">
       SELECT LAST_INSERT_ID()
     </selectKey>
-    insert into notice (id, sender, receiver, 
-      message, time)
-    values (#{id,jdbcType=INTEGER}, #{sender,jdbcType=VARCHAR}, #{receiver,jdbcType=VARCHAR}, 
-      #{message,jdbcType=VARCHAR}, #{time,jdbcType=TIMESTAMP})
+    insert into notice (id, fromid, toid, 
+      message, time, status
+      )
+    values (#{id,jdbcType=INTEGER}, #{fromid,jdbcType=INTEGER}, #{toid,jdbcType=INTEGER}, 
+      #{message,jdbcType=VARCHAR}, #{time,jdbcType=TIMESTAMP}, #{status,jdbcType=VARCHAR}
+      )
   </insert>
   <insert id="insertSelective" parameterType="edu.hunau.hyx.bean.Notice">
     <selectKey keyProperty="id" order="BEFORE" resultType="java.lang.Integer">
@@ -115,11 +118,11 @@
     insert into notice
     <trim prefix="(" suffix=")" suffixOverrides=",">
       id,
-      <if test="sender != null">
-        sender,
+      <if test="fromid != null">
+        fromid,
       </if>
-      <if test="receiver != null">
-        receiver,
+      <if test="toid != null">
+        toid,
       </if>
       <if test="message != null">
         message,
@@ -127,20 +130,26 @@
       <if test="time != null">
         time,
       </if>
+      <if test="status != null">
+        status,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       #{id,jdbcType=INTEGER},
-      <if test="sender != null">
-        #{sender,jdbcType=VARCHAR},
+      <if test="fromid != null">
+        #{fromid,jdbcType=INTEGER},
       </if>
-      <if test="receiver != null">
-        #{receiver,jdbcType=VARCHAR},
+      <if test="toid != null">
+        #{toid,jdbcType=INTEGER},
       </if>
       <if test="message != null">
         #{message,jdbcType=VARCHAR},
       </if>
       <if test="time != null">
         #{time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -156,17 +165,20 @@
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
       </if>
-      <if test="record.sender != null">
-        sender = #{record.sender,jdbcType=VARCHAR},
+      <if test="record.fromid != null">
+        fromid = #{record.fromid,jdbcType=INTEGER},
       </if>
-      <if test="record.receiver != null">
-        receiver = #{record.receiver,jdbcType=VARCHAR},
+      <if test="record.toid != null">
+        toid = #{record.toid,jdbcType=INTEGER},
       </if>
       <if test="record.message != null">
         message = #{record.message,jdbcType=VARCHAR},
       </if>
       <if test="record.time != null">
         time = #{record.time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.status != null">
+        status = #{record.status,jdbcType=VARCHAR},
       </if>
     </set>
     <if test="_parameter != null">
@@ -176,10 +188,11 @@
   <update id="updateByExample" parameterType="map">
     update notice
     set id = #{record.id,jdbcType=INTEGER},
-      sender = #{record.sender,jdbcType=VARCHAR},
-      receiver = #{record.receiver,jdbcType=VARCHAR},
+      fromid = #{record.fromid,jdbcType=INTEGER},
+      toid = #{record.toid,jdbcType=INTEGER},
       message = #{record.message,jdbcType=VARCHAR},
-      time = #{record.time,jdbcType=TIMESTAMP}
+      time = #{record.time,jdbcType=TIMESTAMP},
+      status = #{record.status,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -187,11 +200,11 @@
   <update id="updateByPrimaryKeySelective" parameterType="edu.hunau.hyx.bean.Notice">
     update notice
     <set>
-      <if test="sender != null">
-        sender = #{sender,jdbcType=VARCHAR},
+      <if test="fromid != null">
+        fromid = #{fromid,jdbcType=INTEGER},
       </if>
-      <if test="receiver != null">
-        receiver = #{receiver,jdbcType=VARCHAR},
+      <if test="toid != null">
+        toid = #{toid,jdbcType=INTEGER},
       </if>
       <if test="message != null">
         message = #{message,jdbcType=VARCHAR},
@@ -199,15 +212,19 @@
       <if test="time != null">
         time = #{time,jdbcType=TIMESTAMP},
       </if>
+      <if test="status != null">
+        status = #{status,jdbcType=VARCHAR},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="edu.hunau.hyx.bean.Notice">
     update notice
-    set sender = #{sender,jdbcType=VARCHAR},
-      receiver = #{receiver,jdbcType=VARCHAR},
+    set fromid = #{fromid,jdbcType=INTEGER},
+      toid = #{toid,jdbcType=INTEGER},
       message = #{message,jdbcType=VARCHAR},
-      time = #{time,jdbcType=TIMESTAMP}
+      time = #{time,jdbcType=TIMESTAMP},
+      status = #{status,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

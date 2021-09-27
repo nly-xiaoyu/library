@@ -1,7 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b7594ef-0961-4566-816b-e9bc1e564590" name="Default Changelist" comment="" />
+    <list default="true" id="3b7594ef-0961-4566-816b-e9bc1e564590" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/adminlogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/Administrator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/AdministratorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/BookAppiontment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/BookAppiontmentExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/BookExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/BookExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/Bookshelf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/BookshelfExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/Department.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/DepartmentExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/Major.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/MajorExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/Notice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/Notice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/NoticeExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/NoticeExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/StudentBook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/StudentBookExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/StudentBorrow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/StudentBorrowExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/StudentExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/UserExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/UserExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/controller/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/controller/userController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/mapper/AdministratorMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/mapper/BookAppiontmentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/mapper/BookshelfMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/mapper/DepartmentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/mapper/MajorMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/mapper/StudentBookMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/mapper/StudentBorrowMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/mapper/StudentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/hunau/hyx/mapper/AdministratorMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/hunau/hyx/mapper/BookAppiontmentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/hunau/hyx/mapper/BookMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/hunau/hyx/mapper/BookMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/hunau/hyx/mapper/BookshelfMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/hunau/hyx/mapper/DepartmentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/hunau/hyx/mapper/MajorMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/hunau/hyx/mapper/NoticeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/hunau/hyx/mapper/NoticeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/hunau/hyx/mapper/StudentBookMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/hunau/hyx/mapper/StudentBorrowMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/hunau/hyx/mapper/StudentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/hunau/hyx/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/hunau/hyx/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/api/init.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/api/init.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/regiester.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/regiester.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/userLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/userLogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/hunau/hyx/mapper/AdministratorMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/hunau/hyx/mapper/BookAppiontmentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/hunau/hyx/mapper/BookMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/hunau/hyx/mapper/BookMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/hunau/hyx/mapper/BookshelfMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/hunau/hyx/mapper/DepartmentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/hunau/hyx/mapper/MajorMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/hunau/hyx/mapper/NoticeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/hunau/hyx/mapper/NoticeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/hunau/hyx/mapper/StudentBookMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/hunau/hyx/mapper/StudentBorrowMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/hunau/hyx/mapper/StudentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/hunau/hyx/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/hunau/hyx/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/configuration.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/administratorMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/bookAppiontmentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/bookMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/bookMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/bookshelfMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/departmentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/majorMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/noticeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/noticeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/studentBookMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/studentBorrowMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/studentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/userMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/userMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/index.jsp" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,10 +98,13 @@
         <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -58,9 +145,10 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zoom620_netbook" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -75,15 +163,16 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\java-ideacode\cbx20201202\library\src\main\webapp\page" />
+      <recent name="F:\java-ideacode\cbx20201202\library\src\main\webapp" />
+      <recent name="F:\java-ideacode\cbx20201202\library\src\main\webapp\WEB-INF" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\java-ideacode\cbx20201202\library\src\main\webapp\page" />
       <recent name="F:\java-ideacode\cbx20201202\library\src\main\webapp" />
       <recent name="F:\java-ideacode\cbx20201202\library\src\main\resources" />
       <recent name="F:\java-ideacode\cbx20201202\library\src\main\java" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\java-ideacode\cbx20201202\library\src\main\webapp" />
-      <recent name="F:\java-ideacode\cbx20201202\library\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -168,6 +257,11 @@
       <workItem from="1631543296076" duration="4026000" />
       <workItem from="1632569841564" duration="6565000" />
       <workItem from="1632640192728" duration="3282000" />
+      <workItem from="1632656669477" duration="6087000" />
+      <workItem from="1632707241493" duration="3657000" />
+      <workItem from="1632750447603" duration="558000" />
+      <workItem from="1632751039130" duration="750000" />
+      <workItem from="1632751893805" duration="2770000" />
     </task>
     <servers />
   </component>
@@ -187,50 +281,50 @@
       <screen x="0" y="0" width="1462" height="864" />
     </state>
     <state x="491" y="293" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1462.864@0.0.1462.864" timestamp="1631543202384" />
-    <state x="511" y="127" key="FileChooserDialogImpl" timestamp="1632580113253">
+    <state x="511" y="127" key="FileChooserDialogImpl" timestamp="1632753851586">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state x="511" y="127" key="FileChooserDialogImpl/0.0.1462.864@0.0.1462.864" timestamp="1632580113253" />
-    <state width="1419" height="274" key="GridCell.Tab.0.bottom" timestamp="1632644067424">
+    <state x="511" y="127" key="FileChooserDialogImpl/0.0.1462.864@0.0.1462.864" timestamp="1632753851586" />
+    <state width="1419" height="231" key="GridCell.Tab.0.bottom" timestamp="1632754140433">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.0.bottom/0.0.1462.864@0.0.1462.864" timestamp="1632644067424" />
-    <state width="1419" height="274" key="GridCell.Tab.0.center" timestamp="1632644067424">
+    <state width="1419" height="231" key="GridCell.Tab.0.bottom/0.0.1462.864@0.0.1462.864" timestamp="1632754140433" />
+    <state width="1419" height="231" key="GridCell.Tab.0.center" timestamp="1632754140433">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.0.center/0.0.1462.864@0.0.1462.864" timestamp="1632644067424" />
-    <state width="1419" height="274" key="GridCell.Tab.0.left" timestamp="1632644067424">
+    <state width="1419" height="231" key="GridCell.Tab.0.center/0.0.1462.864@0.0.1462.864" timestamp="1632754140433" />
+    <state width="1419" height="231" key="GridCell.Tab.0.left" timestamp="1632754140432">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.0.left/0.0.1462.864@0.0.1462.864" timestamp="1632644067424" />
-    <state width="1419" height="274" key="GridCell.Tab.0.right" timestamp="1632644067424">
+    <state width="1419" height="231" key="GridCell.Tab.0.left/0.0.1462.864@0.0.1462.864" timestamp="1632754140432" />
+    <state width="1419" height="231" key="GridCell.Tab.0.right" timestamp="1632754140433">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.0.right/0.0.1462.864@0.0.1462.864" timestamp="1632644067424" />
-    <state width="1419" height="274" key="GridCell.Tab.1.bottom" timestamp="1632644067424">
+    <state width="1419" height="231" key="GridCell.Tab.0.right/0.0.1462.864@0.0.1462.864" timestamp="1632754140433" />
+    <state width="1419" height="231" key="GridCell.Tab.1.bottom" timestamp="1632754140433">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.1.bottom/0.0.1462.864@0.0.1462.864" timestamp="1632644067424" />
-    <state width="1419" height="274" key="GridCell.Tab.1.center" timestamp="1632644067424">
+    <state width="1419" height="231" key="GridCell.Tab.1.bottom/0.0.1462.864@0.0.1462.864" timestamp="1632754140433" />
+    <state width="1419" height="231" key="GridCell.Tab.1.center" timestamp="1632754140433">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.1.center/0.0.1462.864@0.0.1462.864" timestamp="1632644067424" />
-    <state width="1419" height="274" key="GridCell.Tab.1.left" timestamp="1632644067424">
+    <state width="1419" height="231" key="GridCell.Tab.1.center/0.0.1462.864@0.0.1462.864" timestamp="1632754140433" />
+    <state width="1419" height="231" key="GridCell.Tab.1.left" timestamp="1632754140433">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.1.left/0.0.1462.864@0.0.1462.864" timestamp="1632644067424" />
-    <state width="1419" height="274" key="GridCell.Tab.1.right" timestamp="1632644067424">
+    <state width="1419" height="231" key="GridCell.Tab.1.left/0.0.1462.864@0.0.1462.864" timestamp="1632754140433" />
+    <state width="1419" height="231" key="GridCell.Tab.1.right" timestamp="1632754140433">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state width="1419" height="274" key="GridCell.Tab.1.right/0.0.1462.864@0.0.1462.864" timestamp="1632644067424" />
+    <state width="1419" height="231" key="GridCell.Tab.1.right/0.0.1462.864@0.0.1462.864" timestamp="1632754140433" />
     <state x="140" y="149" key="SettingsEditor" timestamp="1632640931103">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
     <state x="140" y="149" key="SettingsEditor/0.0.1462.864@0.0.1462.864" timestamp="1632640931103" />
-    <state x="428" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1632569859807">
+    <state x="428" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1632751894715">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state x="428" y="256" key="com.intellij.ide.util.TipDialog/0.0.1462.864@0.0.1462.864" timestamp="1632569859807" />
+    <state x="428" y="256" key="com.intellij.ide.util.TipDialog/0.0.1462.864@0.0.1462.864" timestamp="1632751894715" />
     <state x="395" y="166" width="672" height="677" key="run.anything.popup" timestamp="1631094308975">
       <screen x="0" y="0" width="1462" height="864" />
     </state>

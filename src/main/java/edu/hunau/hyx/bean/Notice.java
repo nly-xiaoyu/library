@@ -5,13 +5,15 @@ import java.util.Date;
 public class Notice {
     private Integer id;
 
-    private String sender;
+    private Integer fromid;
 
-    private String receiver;
+    private Integer toid;
 
     private String message;
 
     private Date time;
+
+    private String status;
 
     public Integer getId() {
         return id;
@@ -21,20 +23,20 @@ public class Notice {
         this.id = id;
     }
 
-    public String getSender() {
-        return sender;
+    public Integer getFromid() {
+        return fromid;
     }
 
-    public void setSender(String sender) {
-        this.sender = sender == null ? null : sender.trim();
+    public void setFromid(Integer fromid) {
+        this.fromid = fromid;
     }
 
-    public String getReceiver() {
-        return receiver;
+    public Integer getToid() {
+        return toid;
     }
 
-    public void setReceiver(String receiver) {
-        this.receiver = receiver == null ? null : receiver.trim();
+    public void setToid(Integer toid) {
+        this.toid = toid;
     }
 
     public String getMessage() {
@@ -51,5 +53,13 @@ public class Notice {
 
     public void setTime(Date time) {
         this.time = time;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status == null ? null : status.trim();
     }
 }

@@ -3,9 +3,11 @@
 <mapper namespace="edu.hunau.hyx.mapper.UserMapper">
   <resultMap id="BaseResultMap" type="edu.hunau.hyx.bean.User">
     <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="sno" jdbcType="INTEGER" property="sno" />
     <result column="username" jdbcType="VARCHAR" property="username" />
     <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="sno" jdbcType="INTEGER" property="sno" />
+    <result column="tel" jdbcType="VARCHAR" property="tel" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -66,7 +68,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, sno, username, password
+    id, username, password, sno, tel, pid
   </sql>
   <select id="selectByExample" parameterType="edu.hunau.hyx.bean.UserExample" resultMap="BaseResultMap">
     select
@@ -102,10 +104,10 @@
     <selectKey keyProperty="id" order="BEFORE" resultType="java.lang.Integer">
       SELECT LAST_INSERT_ID()
     </selectKey>
-    insert into t_user (id, sno, username, 
-      password)
-    values (#{id,jdbcType=INTEGER}, #{sno,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, 
-      #{password,jdbcType=VARCHAR})
+    insert into t_user (id, username, password, 
+      sno, tel, pid)
+    values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+      #{sno,jdbcType=INTEGER}, #{tel,jdbcType=VARCHAR}, #{pid,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="edu.hunau.hyx.bean.User">
     <selectKey keyProperty="id" order="BEFORE" resultType="java.lang.Integer">
@@ -114,26 +116,38 @@
     insert into t_user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       id,
-      <if test="sno != null">
-        sno,
-      </if>
       <if test="username != null">
         username,
       </if>
       <if test="password != null">
         password,
       </if>
+      <if test="sno != null">
+        sno,
+      </if>
+      <if test="tel != null">
+        tel,
+      </if>
+      <if test="pid != null">
+        pid,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       #{id,jdbcType=INTEGER},
-      <if test="sno != null">
-        #{sno,jdbcType=INTEGER},
-      </if>
       <if test="username != null">
         #{username,jdbcType=VARCHAR},
       </if>
       <if test="password != null">
         #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="sno != null">
+        #{sno,jdbcType=INTEGER},
+      </if>
+      <if test="tel != null">
+        #{tel,jdbcType=VARCHAR},
+      </if>
+      <if test="pid != null">
+        #{pid,jdbcType=INTEGER},
       </if>
     </trim>
   </insert>
@@ -149,14 +163,20 @@
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
       </if>
-      <if test="record.sno != null">
-        sno = #{record.sno,jdbcType=INTEGER},
-      </if>
       <if test="record.username != null">
         username = #{record.username,jdbcType=VARCHAR},
       </if>
       <if test="record.password != null">
         password = #{record.password,jdbcType=VARCHAR},
+      </if>
+      <if test="record.sno != null">
+        sno = #{record.sno,jdbcType=INTEGER},
+      </if>
+      <if test="record.tel != null">
+        tel = #{record.tel,jdbcType=VARCHAR},
+      </if>
+      <if test="record.pid != null">
+        pid = #{record.pid,jdbcType=INTEGER},
       </if>
     </set>
     <if test="_parameter != null">
@@ -166,9 +186,11 @@
   <update id="updateByExample" parameterType="map">
     update t_user
     set id = #{record.id,jdbcType=INTEGER},
-      sno = #{record.sno,jdbcType=INTEGER},
       username = #{record.username,jdbcType=VARCHAR},
-      password = #{record.password,jdbcType=VARCHAR}
+      password = #{record.password,jdbcType=VARCHAR},
+      sno = #{record.sno,jdbcType=INTEGER},
+      tel = #{record.tel,jdbcType=VARCHAR},
+      pid = #{record.pid,jdbcType=INTEGER}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -176,23 +198,31 @@
   <update id="updateByPrimaryKeySelective" parameterType="edu.hunau.hyx.bean.User">
     update t_user
     <set>
-      <if test="sno != null">
-        sno = #{sno,jdbcType=INTEGER},
-      </if>
       <if test="username != null">
         username = #{username,jdbcType=VARCHAR},
       </if>
       <if test="password != null">
         password = #{password,jdbcType=VARCHAR},
       </if>
+      <if test="sno != null">
+        sno = #{sno,jdbcType=INTEGER},
+      </if>
+      <if test="tel != null">
+        tel = #{tel,jdbcType=VARCHAR},
+      </if>
+      <if test="pid != null">
+        pid = #{pid,jdbcType=INTEGER},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="edu.hunau.hyx.bean.User">
     update t_user
-    set sno = #{sno,jdbcType=INTEGER},
-      username = #{username,jdbcType=VARCHAR},
-      password = #{password,jdbcType=VARCHAR}
+    set username = #{username,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      sno = #{sno,jdbcType=INTEGER},
+      tel = #{tel,jdbcType=VARCHAR},
+      pid = #{pid,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

@@ -165,143 +165,123 @@ public class NoticeExample {
             return (Criteria) this;
         }
 
-        public Criteria andSenderIsNull() {
-            addCriterion("sender is null");
+        public Criteria andFromidIsNull() {
+            addCriterion("fromid is null");
             return (Criteria) this;
         }
 
-        public Criteria andSenderIsNotNull() {
-            addCriterion("sender is not null");
+        public Criteria andFromidIsNotNull() {
+            addCriterion("fromid is not null");
             return (Criteria) this;
         }
 
-        public Criteria andSenderEqualTo(String value) {
-            addCriterion("sender =", value, "sender");
+        public Criteria andFromidEqualTo(Integer value) {
+            addCriterion("fromid =", value, "fromid");
             return (Criteria) this;
         }
 
-        public Criteria andSenderNotEqualTo(String value) {
-            addCriterion("sender <>", value, "sender");
+        public Criteria andFromidNotEqualTo(Integer value) {
+            addCriterion("fromid <>", value, "fromid");
             return (Criteria) this;
         }
 
-        public Criteria andSenderGreaterThan(String value) {
-            addCriterion("sender >", value, "sender");
+        public Criteria andFromidGreaterThan(Integer value) {
+            addCriterion("fromid >", value, "fromid");
             return (Criteria) this;
         }
 
-        public Criteria andSenderGreaterThanOrEqualTo(String value) {
-            addCriterion("sender >=", value, "sender");
+        public Criteria andFromidGreaterThanOrEqualTo(Integer value) {
+            addCriterion("fromid >=", value, "fromid");
             return (Criteria) this;
         }
 
-        public Criteria andSenderLessThan(String value) {
-            addCriterion("sender <", value, "sender");
+        public Criteria andFromidLessThan(Integer value) {
+            addCriterion("fromid <", value, "fromid");
             return (Criteria) this;
         }
 
-        public Criteria andSenderLessThanOrEqualTo(String value) {
-            addCriterion("sender <=", value, "sender");
+        public Criteria andFromidLessThanOrEqualTo(Integer value) {
+            addCriterion("fromid <=", value, "fromid");
             return (Criteria) this;
         }
 
-        public Criteria andSenderLike(String value) {
-            addCriterion("sender like", value, "sender");
+        public Criteria andFromidIn(List<Integer> values) {
+            addCriterion("fromid in", values, "fromid");
             return (Criteria) this;
         }
 
-        public Criteria andSenderNotLike(String value) {
-            addCriterion("sender not like", value, "sender");
+        public Criteria andFromidNotIn(List<Integer> values) {
+            addCriterion("fromid not in", values, "fromid");
             return (Criteria) this;
         }
 
-        public Criteria andSenderIn(List<String> values) {
-            addCriterion("sender in", values, "sender");
+        public Criteria andFromidBetween(Integer value1, Integer value2) {
+            addCriterion("fromid between", value1, value2, "fromid");
             return (Criteria) this;
         }
 
-        public Criteria andSenderNotIn(List<String> values) {
-            addCriterion("sender not in", values, "sender");
+        public Criteria andFromidNotBetween(Integer value1, Integer value2) {
+            addCriterion("fromid not between", value1, value2, "fromid");
             return (Criteria) this;
         }
 
-        public Criteria andSenderBetween(String value1, String value2) {
-            addCriterion("sender between", value1, value2, "sender");
+        public Criteria andToidIsNull() {
+            addCriterion("toid is null");
             return (Criteria) this;
         }
 
-        public Criteria andSenderNotBetween(String value1, String value2) {
-            addCriterion("sender not between", value1, value2, "sender");
+        public Criteria andToidIsNotNull() {
+            addCriterion("toid is not null");
             return (Criteria) this;
         }
 
-        public Criteria andReceiverIsNull() {
-            addCriterion("receiver is null");
+        public Criteria andToidEqualTo(Integer value) {
+            addCriterion("toid =", value, "toid");
             return (Criteria) this;
         }
 
-        public Criteria andReceiverIsNotNull() {
-            addCriterion("receiver is not null");
+        public Criteria andToidNotEqualTo(Integer value) {
+            addCriterion("toid <>", value, "toid");
             return (Criteria) this;
         }
 
-        public Criteria andReceiverEqualTo(String value) {
-            addCriterion("receiver =", value, "receiver");
+        public Criteria andToidGreaterThan(Integer value) {
+            addCriterion("toid >", value, "toid");
             return (Criteria) this;
         }
 
-        public Criteria andReceiverNotEqualTo(String value) {
-            addCriterion("receiver <>", value, "receiver");
+        public Criteria andToidGreaterThanOrEqualTo(Integer value) {
+            addCriterion("toid >=", value, "toid");
             return (Criteria) this;
         }
 
-        public Criteria andReceiverGreaterThan(String value) {
-            addCriterion("receiver >", value, "receiver");
+        public Criteria andToidLessThan(Integer value) {
+            addCriterion("toid <", value, "toid");
             return (Criteria) this;
         }
 
-        public Criteria andReceiverGreaterThanOrEqualTo(String value) {
-            addCriterion("receiver >=", value, "receiver");
+        public Criteria andToidLessThanOrEqualTo(Integer value) {
+            addCriterion("toid <=", value, "toid");
             return (Criteria) this;
         }
 
-        public Criteria andReceiverLessThan(String value) {
-            addCriterion("receiver <", value, "receiver");
+        public Criteria andToidIn(List<Integer> values) {
+            addCriterion("toid in", values, "toid");
             return (Criteria) this;
         }
 
-        public Criteria andReceiverLessThanOrEqualTo(String value) {
-            addCriterion("receiver <=", value, "receiver");
+        public Criteria andToidNotIn(List<Integer> values) {
+            addCriterion("toid not in", values, "toid");
             return (Criteria) this;
         }
 
-        public Criteria andReceiverLike(String value) {
-            addCriterion("receiver like", value, "receiver");
+        public Criteria andToidBetween(Integer value1, Integer value2) {
+            addCriterion("toid between", value1, value2, "toid");
             return (Criteria) this;
         }
 
-        public Criteria andReceiverNotLike(String value) {
-            addCriterion("receiver not like", value, "receiver");
-            return (Criteria) this;
-        }
-
-        public Criteria andReceiverIn(List<String> values) {
-            addCriterion("receiver in", values, "receiver");
-            return (Criteria) this;
-        }
-
-        public Criteria andReceiverNotIn(List<String> values) {
-            addCriterion("receiver not in", values, "receiver");
-            return (Criteria) this;
-        }
-
-        public Criteria andReceiverBetween(String value1, String value2) {
-            addCriterion("receiver between", value1, value2, "receiver");
-            return (Criteria) this;
-        }
-
-        public Criteria andReceiverNotBetween(String value1, String value2) {
-            addCriterion("receiver not between", value1, value2, "receiver");
+        public Criteria andToidNotBetween(Integer value1, Integer value2) {
+            addCriterion("toid not between", value1, value2, "toid");
             return (Criteria) this;
         }
 
@@ -432,6 +412,76 @@ public class NoticeExample {
 
         public Criteria andTimeNotBetween(Date value1, Date value2) {
             addCriterion("time not between", value1, value2, "time");
+            return (Criteria) this;
+        }
+
+        public Criteria andStatusIsNull() {
+            addCriterion("status is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andStatusIsNotNull() {
+            addCriterion("status is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andStatusEqualTo(String value) {
+            addCriterion("status =", value, "status");
+            return (Criteria) this;
+        }
+
+        public Criteria andStatusNotEqualTo(String value) {
+            addCriterion("status <>", value, "status");
+            return (Criteria) this;
+        }
+
+        public Criteria andStatusGreaterThan(String value) {
+            addCriterion("status >", value, "status");
+            return (Criteria) this;
+        }
+
+        public Criteria andStatusGreaterThanOrEqualTo(String value) {
+            addCriterion("status >=", value, "status");
+            return (Criteria) this;
+        }
+
+        public Criteria andStatusLessThan(String value) {
+            addCriterion("status <", value, "status");
+            return (Criteria) this;
+        }
+
+        public Criteria andStatusLessThanOrEqualTo(String value) {
+            addCriterion("status <=", value, "status");
+            return (Criteria) this;
+        }
+
+        public Criteria andStatusLike(String value) {
+            addCriterion("status like", value, "status");
+            return (Criteria) this;
+        }
+
+        public Criteria andStatusNotLike(String value) {
+            addCriterion("status not like", value, "status");
+            return (Criteria) this;
+        }
+
+        public Criteria andStatusIn(List<String> values) {
+            addCriterion("status in", values, "status");
+            return (Criteria) this;
+        }
+
+        public Criteria andStatusNotIn(List<String> values) {
+            addCriterion("status not in", values, "status");
+            return (Criteria) this;
+        }
+
+        public Criteria andStatusBetween(String value1, String value2) {
+            addCriterion("status between", value1, value2, "status");
+            return (Criteria) this;
+        }
+
+        public Criteria andStatusNotBetween(String value1, String value2) {
+            addCriterion("status not between", value1, value2, "status");
             return (Criteria) this;
         }
     }

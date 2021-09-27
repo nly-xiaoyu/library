@@ -19,7 +19,7 @@
 <body style="background-image: url('/images/bg.jpg')">
 
 <div id="gb">
-    <form class="layui-form" action="/register">
+    <form class="layui-form" action="/register" method="post">
         <div class="registerbox-title">用户注册中心</div>
         <label style="color: red;text-align: center">${msg}</label>
         <div class="layui-form-item">
@@ -28,7 +28,11 @@
         </div>
         <div class="layui-form-item">
             <label class="layui-icon">学号</label>
-            <input type="text" name="sno" required lay-verify="required" placeholder="请输入学号" autocomplete="off" class="layui-input">
+            <input type="number" name="sno" required lay-verify="required" placeholder="请输入学号" autocomplete="off" class="layui-input">
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-icon">电话</label>
+            <input type="number" name="tel" required lay-verify="required" placeholder="请输入学号" autocomplete="off" class="layui-input">
         </div>
         <div class="layui-form-item">
             <label class="layui-icon layui-icon-password">用户密码</label>
@@ -67,11 +71,33 @@
         var form = layui.form,
             layer = layui.layer,
             $ = layui.$;
-        })
+        form.on('submit(formDemo)', function (data) {
+            data = data.field;
+            $.ajax({
 
+                type: "POST",//方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                url: "/register" ,//url
+                data: data,
+                success: function (result) {
+                    console.log(result);//打印服务端返回的数据(调试用)
+                    if (result.resultCode == 200) {
+                        alert("SUCCESS");
+                    }
+                    ;
+                },
+                error : function() {
+                    alert("异常！");
+                }
+            });
 
+            return false;
+        });
 
     })
+
+
+
 
 </script>
 </html>

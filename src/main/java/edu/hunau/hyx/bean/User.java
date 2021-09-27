@@ -3,11 +3,15 @@ package edu.hunau.hyx.bean;
 public class User {
     private Integer id;
 
-    private Integer sno;
-
     private String username;
 
     private String password;
+
+    private Integer sno;
+
+    private String tel;
+
+    private Integer pid;
 
     public Integer getId() {
         return id;
@@ -15,14 +19,6 @@ public class User {
 
     public void setId(Integer id) {
         this.id = id;
-    }
-
-    public Integer getSno() {
-        return sno;
-    }
-
-    public void setSno(Integer sno) {
-        this.sno = sno;
     }
 
     public String getUsername() {
@@ -39,15 +35,29 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password == null ? null : password.trim();
-}
+    }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", sno=" + sno +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                '}';
+    public Integer getSno() {
+        return sno;
+    }
+
+    public void setSno(Integer sno) {
+        this.sno = sno;
+    }
+
+    public String getTel() {
+        return tel;
+    }
+
+    public void setTel(String tel) {
+        this.tel = tel == null ? null : tel.trim();
+    }
+
+    public Integer getPid() {
+        return pid;
+    }
+
+    public void setPid(Integer pid) {
+        this.pid = pid;
     }
 }

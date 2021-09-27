@@ -3,13 +3,13 @@
 <mapper namespace="edu.hunau.hyx.mapper.BookMapper">
   <resultMap id="BaseResultMap" type="edu.hunau.hyx.bean.Book">
     <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="bno" jdbcType="VARCHAR" property="bno" />
     <result column="bname" jdbcType="VARCHAR" property="bname" />
-    <result column="bauthor" jdbcType="VARCHAR" property="bauthor" />
-    <result column="bprice" jdbcType="DOUBLE" property="bprice" />
-    <result column="bnum" jdbcType="INTEGER" property="bnum" />
-    <result column="bshelf" jdbcType="VARCHAR" property="bshelf" />
-    <result column="bremark" jdbcType="VARCHAR" property="bremark" />
+    <result column="bno" jdbcType="INTEGER" property="bno" />
+    <result column="authoe" jdbcType="VARCHAR" property="authoe" />
+    <result column="price" jdbcType="DOUBLE" property="price" />
+    <result column="locnum" jdbcType="INTEGER" property="locnum" />
+    <result column="locarea" jdbcType="VARCHAR" property="locarea" />
+    <result column="ramark" jdbcType="VARCHAR" property="ramark" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -70,7 +70,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, bno, bname, bauthor, bprice, bnum, bshelf, bremark
+    id, bname, bno, authoe, price, locnum, locarea, ramark
   </sql>
   <select id="selectByExample" parameterType="edu.hunau.hyx.bean.BookExample" resultMap="BaseResultMap">
     select
@@ -106,12 +106,12 @@
     <selectKey keyProperty="id" order="BEFORE" resultType="java.lang.Integer">
       SELECT LAST_INSERT_ID()
     </selectKey>
-    insert into book (id, bno, bname, 
-      bauthor, bprice, bnum, 
-      bshelf, bremark)
-    values (#{id,jdbcType=INTEGER}, #{bno,jdbcType=VARCHAR}, #{bname,jdbcType=VARCHAR}, 
-      #{bauthor,jdbcType=VARCHAR}, #{bprice,jdbcType=DOUBLE}, #{bnum,jdbcType=INTEGER}, 
-      #{bshelf,jdbcType=VARCHAR}, #{bremark,jdbcType=VARCHAR})
+    insert into book (id, bname, bno, 
+      authoe, price, locnum, 
+      locarea, ramark)
+    values (#{id,jdbcType=INTEGER}, #{bname,jdbcType=VARCHAR}, #{bno,jdbcType=INTEGER}, 
+      #{authoe,jdbcType=VARCHAR}, #{price,jdbcType=DOUBLE}, #{locnum,jdbcType=INTEGER}, 
+      #{locarea,jdbcType=VARCHAR}, #{ramark,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="edu.hunau.hyx.bean.Book">
     <selectKey keyProperty="id" order="BEFORE" resultType="java.lang.Integer">
@@ -120,50 +120,50 @@
     insert into book
     <trim prefix="(" suffix=")" suffixOverrides=",">
       id,
-      <if test="bno != null">
-        bno,
-      </if>
       <if test="bname != null">
         bname,
       </if>
-      <if test="bauthor != null">
-        bauthor,
+      <if test="bno != null">
+        bno,
       </if>
-      <if test="bprice != null">
-        bprice,
+      <if test="authoe != null">
+        authoe,
       </if>
-      <if test="bnum != null">
-        bnum,
+      <if test="price != null">
+        price,
       </if>
-      <if test="bshelf != null">
-        bshelf,
+      <if test="locnum != null">
+        locnum,
       </if>
-      <if test="bremark != null">
-        bremark,
+      <if test="locarea != null">
+        locarea,
+      </if>
+      <if test="ramark != null">
+        ramark,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       #{id,jdbcType=INTEGER},
-      <if test="bno != null">
-        #{bno,jdbcType=VARCHAR},
-      </if>
       <if test="bname != null">
         #{bname,jdbcType=VARCHAR},
       </if>
-      <if test="bauthor != null">
-        #{bauthor,jdbcType=VARCHAR},
+      <if test="bno != null">
+        #{bno,jdbcType=INTEGER},
       </if>
-      <if test="bprice != null">
-        #{bprice,jdbcType=DOUBLE},
+      <if test="authoe != null">
+        #{authoe,jdbcType=VARCHAR},
       </if>
-      <if test="bnum != null">
-        #{bnum,jdbcType=INTEGER},
+      <if test="price != null">
+        #{price,jdbcType=DOUBLE},
       </if>
-      <if test="bshelf != null">
-        #{bshelf,jdbcType=VARCHAR},
+      <if test="locnum != null">
+        #{locnum,jdbcType=INTEGER},
       </if>
-      <if test="bremark != null">
-        #{bremark,jdbcType=VARCHAR},
+      <if test="locarea != null">
+        #{locarea,jdbcType=VARCHAR},
+      </if>
+      <if test="ramark != null">
+        #{ramark,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -179,26 +179,26 @@
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
       </if>
-      <if test="record.bno != null">
-        bno = #{record.bno,jdbcType=VARCHAR},
-      </if>
       <if test="record.bname != null">
         bname = #{record.bname,jdbcType=VARCHAR},
       </if>
-      <if test="record.bauthor != null">
-        bauthor = #{record.bauthor,jdbcType=VARCHAR},
+      <if test="record.bno != null">
+        bno = #{record.bno,jdbcType=INTEGER},
       </if>
-      <if test="record.bprice != null">
-        bprice = #{record.bprice,jdbcType=DOUBLE},
+      <if test="record.authoe != null">
+        authoe = #{record.authoe,jdbcType=VARCHAR},
       </if>
-      <if test="record.bnum != null">
-        bnum = #{record.bnum,jdbcType=INTEGER},
+      <if test="record.price != null">
+        price = #{record.price,jdbcType=DOUBLE},
       </if>
-      <if test="record.bshelf != null">
-        bshelf = #{record.bshelf,jdbcType=VARCHAR},
+      <if test="record.locnum != null">
+        locnum = #{record.locnum,jdbcType=INTEGER},
       </if>
-      <if test="record.bremark != null">
-        bremark = #{record.bremark,jdbcType=VARCHAR},
+      <if test="record.locarea != null">
+        locarea = #{record.locarea,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ramark != null">
+        ramark = #{record.ramark,jdbcType=VARCHAR},
       </if>
     </set>
     <if test="_parameter != null">
@@ -208,13 +208,13 @@
   <update id="updateByExample" parameterType="map">
     update book
     set id = #{record.id,jdbcType=INTEGER},
-      bno = #{record.bno,jdbcType=VARCHAR},
       bname = #{record.bname,jdbcType=VARCHAR},
-      bauthor = #{record.bauthor,jdbcType=VARCHAR},
-      bprice = #{record.bprice,jdbcType=DOUBLE},
-      bnum = #{record.bnum,jdbcType=INTEGER},
-      bshelf = #{record.bshelf,jdbcType=VARCHAR},
-      bremark = #{record.bremark,jdbcType=VARCHAR}
+      bno = #{record.bno,jdbcType=INTEGER},
+      authoe = #{record.authoe,jdbcType=VARCHAR},
+      price = #{record.price,jdbcType=DOUBLE},
+      locnum = #{record.locnum,jdbcType=INTEGER},
+      locarea = #{record.locarea,jdbcType=VARCHAR},
+      ramark = #{record.ramark,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -222,39 +222,39 @@
   <update id="updateByPrimaryKeySelective" parameterType="edu.hunau.hyx.bean.Book">
     update book
     <set>
-      <if test="bno != null">
-        bno = #{bno,jdbcType=VARCHAR},
-      </if>
       <if test="bname != null">
         bname = #{bname,jdbcType=VARCHAR},
       </if>
-      <if test="bauthor != null">
-        bauthor = #{bauthor,jdbcType=VARCHAR},
+      <if test="bno != null">
+        bno = #{bno,jdbcType=INTEGER},
       </if>
-      <if test="bprice != null">
-        bprice = #{bprice,jdbcType=DOUBLE},
+      <if test="authoe != null">
+        authoe = #{authoe,jdbcType=VARCHAR},
       </if>
-      <if test="bnum != null">
-        bnum = #{bnum,jdbcType=INTEGER},
+      <if test="price != null">
+        price = #{price,jdbcType=DOUBLE},
       </if>
-      <if test="bshelf != null">
-        bshelf = #{bshelf,jdbcType=VARCHAR},
+      <if test="locnum != null">
+        locnum = #{locnum,jdbcType=INTEGER},
       </if>
-      <if test="bremark != null">
-        bremark = #{bremark,jdbcType=VARCHAR},
+      <if test="locarea != null">
+        locarea = #{locarea,jdbcType=VARCHAR},
+      </if>
+      <if test="ramark != null">
+        ramark = #{ramark,jdbcType=VARCHAR},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="edu.hunau.hyx.bean.Book">
     update book
-    set bno = #{bno,jdbcType=VARCHAR},
-      bname = #{bname,jdbcType=VARCHAR},
-      bauthor = #{bauthor,jdbcType=VARCHAR},
-      bprice = #{bprice,jdbcType=DOUBLE},
-      bnum = #{bnum,jdbcType=INTEGER},
-      bshelf = #{bshelf,jdbcType=VARCHAR},
-      bremark = #{bremark,jdbcType=VARCHAR}
+    set bname = #{bname,jdbcType=VARCHAR},
+      bno = #{bno,jdbcType=INTEGER},
+      authoe = #{authoe,jdbcType=VARCHAR},
+      price = #{price,jdbcType=DOUBLE},
+      locnum = #{locnum,jdbcType=INTEGER},
+      locarea = #{locarea,jdbcType=VARCHAR},
+      ramark = #{ramark,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

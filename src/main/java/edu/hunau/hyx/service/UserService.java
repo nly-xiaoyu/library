@@ -15,10 +15,6 @@ public interface UserService {
     /**
      *
      */
-    public int insertUser(User user);
 
-    public boolean queryByUsernameAndpassward(String username, String password);
-
-    public List<User> queryBySno(Integer sno);
 
 }
