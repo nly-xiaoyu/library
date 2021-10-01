@@ -21,7 +21,6 @@
 <div id="gb">
     <form class="layui-form" action="/register" method="post">
         <div class="registerbox-title">用户注册中心</div>
-        <label style="color: red;text-align: center">${msg}</label>
         <div class="layui-form-item">
             <label class="layui-icon layui-icon-username">用户名</label>
             <input type="text" name="username" required lay-verify="required" placeholder="请输入账号" autocomplete="off" class="layui-input">
@@ -74,19 +73,20 @@
         form.on('submit(formDemo)', function (data) {
             data = data.field;
             $.ajax({
-
                 type: "POST",//方法类型
                 dataType: "json",//预期服务器返回的数据类型
                 url: "/register" ,//url
                 data: data,
-                success: function (result) {
-                    console.log(result);//打印服务端返回的数据(调试用)
-                    if (result.resultCode == 200) {
-                        alert("SUCCESS");
+                success: function (data) {
+                    console.log(data);//打印服务端返回的数据(调试用)
+                    if(data.status == 200){
+                        location.href='http://127.0.0.1:8080'
+                    }else{
+                        layer.msg(data.msg)
                     }
-                    ;
                 },
-                error : function() {
+                error : function(data) {
+
                     alert("异常！");
                 }
             });

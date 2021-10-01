@@ -20,7 +20,16 @@ public class jumpController {
 
     @GetMapping("/userLoginController")
     public ModelAndView jumptoUserLogin(HttpServletRequest request, HttpServletResponse response)throws Exception{
-        return new ModelAndView("page/userLogin");
+        return new ModelAndView("page/login");
     }
 
+/*    @GetMapping("/index")
+    public ModelAndView jumptoHome(HttpServletRequest request,HttpServletResponse response)throws Exception{
+        return new ModelAndView("index");
+    }*/
+
+    @GetMapping("/home")
+    public ModelAndView jumptoHome(HttpServletRequest request,HttpServletResponse response)throws Exception{
+        return new ModelAndView("home");
+    }
 }

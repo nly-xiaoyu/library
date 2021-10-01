@@ -3,6 +3,18 @@ package edu.hunau.hyx.bean;
 public class User {
     private Integer id;
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", sno=" + sno +
+                ", tel='" + tel + '\'' +
+                ", pid=" + pid +
+                '}';
+    }
+
     private String username;
 
     private String password;

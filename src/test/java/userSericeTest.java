@@ -20,5 +20,13 @@ public class userSericeTest {
         System.out.println(user);
         //userserice.insertUser(user);
     };
+    @Test
+    public void userquery(){
+        User user = new User();
+        user.setUsername("admin");
+        user.setPassword(new MD5Util().stringMD5("123456library"));
+        System.out.println(user);
+        //userserice.insertUser(user);
+    };
 
 }
