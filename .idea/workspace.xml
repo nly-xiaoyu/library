@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b7594ef-0961-4566-816b-e9bc1e564590" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/controller/jumpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/controller/jumpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/controller/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/controller/userController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/configuration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/configuration.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/adminlogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/page/regiester.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/page/regiester.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/userSericeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/userSericeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/configuration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/configuration.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3b7594ef-0961-4566-816b-e9bc1e564590" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -198,7 +181,7 @@
       <workItem from="1632755477006" duration="1490000" />
       <workItem from="1632832072184" duration="7904000" />
       <workItem from="1632901071962" duration="8653000" />
-      <workItem from="1633072924504" duration="452000" />
+      <workItem from="1633072924504" duration="700000" />
     </task>
     <servers />
   </component>
@@ -258,10 +241,10 @@
       <screen x="0" y="0" width="1462" height="864" />
     </state>
     <state width="1419" height="343" key="GridCell.Tab.1.right/0.0.1462.864@0.0.1462.864" timestamp="1632924289719" />
-    <state x="262" y="87" key="Maven.ArtifactSearchDialog" timestamp="1633073536662">
+    <state x="262" y="87" key="Maven.ArtifactSearchDialog" timestamp="1633073845443">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state x="262" y="87" key="Maven.ArtifactSearchDialog/0.0.1462.864@0.0.1462.864" timestamp="1633073536662" />
+    <state x="262" y="87" key="Maven.ArtifactSearchDialog/0.0.1462.864@0.0.1462.864" timestamp="1633073845443" />
     <state x="140" y="149" key="SettingsEditor" timestamp="1632833443812">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
@@ -270,6 +253,10 @@
       <screen x="0" y="0" width="1462" height="864" />
     </state>
     <state x="428" y="256" key="com.intellij.ide.util.TipDialog/0.0.1462.864@0.0.1462.864" timestamp="1633073335861" />
+    <state x="541" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1633073871791">
+      <screen x="0" y="0" width="1462" height="864" />
+    </state>
+    <state x="541" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1462.864@0.0.1462.864" timestamp="1633073871791" />
     <state x="395" y="166" width="672" height="677" key="run.anything.popup" timestamp="1631094308975">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
