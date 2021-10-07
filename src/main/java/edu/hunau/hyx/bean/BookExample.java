@@ -364,6 +364,76 @@ public class BookExample {
             return (Criteria) this;
         }
 
+        public Criteria andBclassIsNull() {
+            addCriterion("bclass is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andBclassIsNotNull() {
+            addCriterion("bclass is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andBclassEqualTo(String value) {
+            addCriterion("bclass =", value, "bclass");
+            return (Criteria) this;
+        }
+
+        public Criteria andBclassNotEqualTo(String value) {
+            addCriterion("bclass <>", value, "bclass");
+            return (Criteria) this;
+        }
+
+        public Criteria andBclassGreaterThan(String value) {
+            addCriterion("bclass >", value, "bclass");
+            return (Criteria) this;
+        }
+
+        public Criteria andBclassGreaterThanOrEqualTo(String value) {
+            addCriterion("bclass >=", value, "bclass");
+            return (Criteria) this;
+        }
+
+        public Criteria andBclassLessThan(String value) {
+            addCriterion("bclass <", value, "bclass");
+            return (Criteria) this;
+        }
+
+        public Criteria andBclassLessThanOrEqualTo(String value) {
+            addCriterion("bclass <=", value, "bclass");
+            return (Criteria) this;
+        }
+
+        public Criteria andBclassLike(String value) {
+            addCriterion("bclass like", value, "bclass");
+            return (Criteria) this;
+        }
+
+        public Criteria andBclassNotLike(String value) {
+            addCriterion("bclass not like", value, "bclass");
+            return (Criteria) this;
+        }
+
+        public Criteria andBclassIn(List<String> values) {
+            addCriterion("bclass in", values, "bclass");
+            return (Criteria) this;
+        }
+
+        public Criteria andBclassNotIn(List<String> values) {
+            addCriterion("bclass not in", values, "bclass");
+            return (Criteria) this;
+        }
+
+        public Criteria andBclassBetween(String value1, String value2) {
+            addCriterion("bclass between", value1, value2, "bclass");
+            return (Criteria) this;
+        }
+
+        public Criteria andBclassNotBetween(String value1, String value2) {
+            addCriterion("bclass not between", value1, value2, "bclass");
+            return (Criteria) this;
+        }
+
         public Criteria andPriceIsNull() {
             addCriterion("price is null");
             return (Criteria) this;
@@ -621,6 +691,66 @@ public class BookExample {
 
         public Criteria andRamarkNotBetween(String value1, String value2) {
             addCriterion("ramark not between", value1, value2, "ramark");
+            return (Criteria) this;
+        }
+
+        public Criteria andBstatusIsNull() {
+            addCriterion("bstatus is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andBstatusIsNotNull() {
+            addCriterion("bstatus is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andBstatusEqualTo(Integer value) {
+            addCriterion("bstatus =", value, "bstatus");
+            return (Criteria) this;
+        }
+
+        public Criteria andBstatusNotEqualTo(Integer value) {
+            addCriterion("bstatus <>", value, "bstatus");
+            return (Criteria) this;
+        }
+
+        public Criteria andBstatusGreaterThan(Integer value) {
+            addCriterion("bstatus >", value, "bstatus");
+            return (Criteria) this;
+        }
+
+        public Criteria andBstatusGreaterThanOrEqualTo(Integer value) {
+            addCriterion("bstatus >=", value, "bstatus");
+            return (Criteria) this;
+        }
+
+        public Criteria andBstatusLessThan(Integer value) {
+            addCriterion("bstatus <", value, "bstatus");
+            return (Criteria) this;
+        }
+
+        public Criteria andBstatusLessThanOrEqualTo(Integer value) {
+            addCriterion("bstatus <=", value, "bstatus");
+            return (Criteria) this;
+        }
+
+        public Criteria andBstatusIn(List<Integer> values) {
+            addCriterion("bstatus in", values, "bstatus");
+            return (Criteria) this;
+        }
+
+        public Criteria andBstatusNotIn(List<Integer> values) {
+            addCriterion("bstatus not in", values, "bstatus");
+            return (Criteria) this;
+        }
+
+        public Criteria andBstatusBetween(Integer value1, Integer value2) {
+            addCriterion("bstatus between", value1, value2, "bstatus");
+            return (Criteria) this;
+        }
+
+        public Criteria andBstatusNotBetween(Integer value1, Integer value2) {
+            addCriterion("bstatus not between", value1, value2, "bstatus");
             return (Criteria) this;
         }
     }

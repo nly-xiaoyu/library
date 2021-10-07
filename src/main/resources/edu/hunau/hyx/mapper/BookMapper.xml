@@ -6,10 +6,12 @@
     <result column="bname" jdbcType="VARCHAR" property="bname" />
     <result column="bno" jdbcType="INTEGER" property="bno" />
     <result column="authoe" jdbcType="VARCHAR" property="authoe" />
+    <result column="bclass" jdbcType="VARCHAR" property="bclass" />
     <result column="price" jdbcType="DOUBLE" property="price" />
     <result column="locnum" jdbcType="INTEGER" property="locnum" />
     <result column="locarea" jdbcType="VARCHAR" property="locarea" />
     <result column="ramark" jdbcType="VARCHAR" property="ramark" />
+    <result column="bstatus" jdbcType="INTEGER" property="bstatus" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -70,7 +72,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, bname, bno, authoe, price, locnum, locarea, ramark
+    id, bname, bno, authoe, bclass, price, locnum, locarea, ramark, bstatus
   </sql>
   <select id="selectByExample" parameterType="edu.hunau.hyx.bean.BookExample" resultMap="BaseResultMap">
     select
@@ -107,11 +109,13 @@
       SELECT LAST_INSERT_ID()
     </selectKey>
     insert into book (id, bname, bno, 
-      authoe, price, locnum, 
-      locarea, ramark)
+      authoe, bclass, price, 
+      locnum, locarea, ramark, 
+      bstatus)
     values (#{id,jdbcType=INTEGER}, #{bname,jdbcType=VARCHAR}, #{bno,jdbcType=INTEGER}, 
-      #{authoe,jdbcType=VARCHAR}, #{price,jdbcType=DOUBLE}, #{locnum,jdbcType=INTEGER}, 
-      #{locarea,jdbcType=VARCHAR}, #{ramark,jdbcType=VARCHAR})
+      #{authoe,jdbcType=VARCHAR}, #{bclass,jdbcType=VARCHAR}, #{price,jdbcType=DOUBLE}, 
+      #{locnum,jdbcType=INTEGER}, #{locarea,jdbcType=VARCHAR}, #{ramark,jdbcType=VARCHAR}, 
+      #{bstatus,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="edu.hunau.hyx.bean.Book">
     <selectKey keyProperty="id" order="BEFORE" resultType="java.lang.Integer">
@@ -129,6 +133,9 @@
       <if test="authoe != null">
         authoe,
       </if>
+      <if test="bclass != null">
+        bclass,
+      </if>
       <if test="price != null">
         price,
       </if>
@@ -140,6 +147,9 @@
       </if>
       <if test="ramark != null">
         ramark,
+      </if>
+      <if test="bstatus != null">
+        bstatus,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
@@ -153,6 +163,9 @@
       <if test="authoe != null">
         #{authoe,jdbcType=VARCHAR},
       </if>
+      <if test="bclass != null">
+        #{bclass,jdbcType=VARCHAR},
+      </if>
       <if test="price != null">
         #{price,jdbcType=DOUBLE},
       </if>
@@ -164,6 +177,9 @@
       </if>
       <if test="ramark != null">
         #{ramark,jdbcType=VARCHAR},
+      </if>
+      <if test="bstatus != null">
+        #{bstatus,jdbcType=INTEGER},
       </if>
     </trim>
   </insert>
@@ -188,6 +204,9 @@
       <if test="record.authoe != null">
         authoe = #{record.authoe,jdbcType=VARCHAR},
       </if>
+      <if test="record.bclass != null">
+        bclass = #{record.bclass,jdbcType=VARCHAR},
+      </if>
       <if test="record.price != null">
         price = #{record.price,jdbcType=DOUBLE},
       </if>
@@ -200,6 +219,9 @@
       <if test="record.ramark != null">
         ramark = #{record.ramark,jdbcType=VARCHAR},
       </if>
+      <if test="record.bstatus != null">
+        bstatus = #{record.bstatus,jdbcType=INTEGER},
+      </if>
     </set>
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
@@ -211,10 +233,12 @@
       bname = #{record.bname,jdbcType=VARCHAR},
       bno = #{record.bno,jdbcType=INTEGER},
       authoe = #{record.authoe,jdbcType=VARCHAR},
+      bclass = #{record.bclass,jdbcType=VARCHAR},
       price = #{record.price,jdbcType=DOUBLE},
       locnum = #{record.locnum,jdbcType=INTEGER},
       locarea = #{record.locarea,jdbcType=VARCHAR},
-      ramark = #{record.ramark,jdbcType=VARCHAR}
+      ramark = #{record.ramark,jdbcType=VARCHAR},
+      bstatus = #{record.bstatus,jdbcType=INTEGER}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -231,6 +255,9 @@
       <if test="authoe != null">
         authoe = #{authoe,jdbcType=VARCHAR},
       </if>
+      <if test="bclass != null">
+        bclass = #{bclass,jdbcType=VARCHAR},
+      </if>
       <if test="price != null">
         price = #{price,jdbcType=DOUBLE},
       </if>
@@ -243,6 +270,9 @@
       <if test="ramark != null">
         ramark = #{ramark,jdbcType=VARCHAR},
       </if>
+      <if test="bstatus != null">
+        bstatus = #{bstatus,jdbcType=INTEGER},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
@@ -251,10 +281,12 @@
     set bname = #{bname,jdbcType=VARCHAR},
       bno = #{bno,jdbcType=INTEGER},
       authoe = #{authoe,jdbcType=VARCHAR},
+      bclass = #{bclass,jdbcType=VARCHAR},
       price = #{price,jdbcType=DOUBLE},
       locnum = #{locnum,jdbcType=INTEGER},
       locarea = #{locarea,jdbcType=VARCHAR},
-      ramark = #{ramark,jdbcType=VARCHAR}
+      ramark = #{ramark,jdbcType=VARCHAR},
+      bstatus = #{bstatus,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

@@ -3,8 +3,19 @@
 <mapper namespace="edu.hunau.hyx.mapper.MenuMapper">
   <resultMap id="BaseResultMap" type="edu.hunau.hyx.bean.Menu">
     <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="mname" jdbcType="VARCHAR" property="mname" />
-    <result column="mid" jdbcType="INTEGER" property="mid" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="href" jdbcType="VARCHAR" property="href" />
+    <result column="target" jdbcType="VARCHAR" property="target" />
+    <result column="spread" jdbcType="INTEGER" property="spread" />
+    <result column="permission" jdbcType="VARCHAR" property="permission" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+    <result column="ifdelete" jdbcType="INTEGER" property="ifdelete" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -65,7 +76,8 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, mname, mid
+    id, pid, title, icon, href, target, spread, permission, type, status, sort, ifdelete, 
+    create_by, create_time
   </sql>
   <select id="selectByExample" parameterType="edu.hunau.hyx.bean.MenuExample" resultMap="BaseResultMap">
     select
@@ -101,10 +113,16 @@
     <selectKey keyProperty="id" order="BEFORE" resultType="java.lang.Integer">
       SELECT LAST_INSERT_ID()
     </selectKey>
-    insert into menu (id, mname, mid
-      )
-    values (#{id,jdbcType=INTEGER}, #{mname,jdbcType=VARCHAR}, #{mid,jdbcType=INTEGER}
-      )
+    insert into menu (id, pid, title, 
+      icon, href, target, 
+      spread, permission, type, 
+      status, sort, ifdelete, 
+      create_by, create_time)
+    values (#{id,jdbcType=INTEGER}, #{pid,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, 
+      #{icon,jdbcType=VARCHAR}, #{href,jdbcType=VARCHAR}, #{target,jdbcType=VARCHAR}, 
+      #{spread,jdbcType=INTEGER}, #{permission,jdbcType=VARCHAR}, #{type,jdbcType=INTEGER}, 
+      #{status,jdbcType=INTEGER}, #{sort,jdbcType=INTEGER}, #{ifdelete,jdbcType=INTEGER}, 
+      #{createBy,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="edu.hunau.hyx.bean.Menu">
     <selectKey keyProperty="id" order="BEFORE" resultType="java.lang.Integer">
@@ -113,20 +131,86 @@
     insert into menu
     <trim prefix="(" suffix=")" suffixOverrides=",">
       id,
-      <if test="mname != null">
-        mname,
+      <if test="pid != null">
+        pid,
       </if>
-      <if test="mid != null">
-        mid,
+      <if test="title != null">
+        title,
+      </if>
+      <if test="icon != null">
+        icon,
+      </if>
+      <if test="href != null">
+        href,
+      </if>
+      <if test="target != null">
+        target,
+      </if>
+      <if test="spread != null">
+        spread,
+      </if>
+      <if test="permission != null">
+        permission,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="sort != null">
+        sort,
+      </if>
+      <if test="ifdelete != null">
+        ifdelete,
+      </if>
+      <if test="createBy != null">
+        create_by,
+      </if>
+      <if test="createTime != null">
+        create_time,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       #{id,jdbcType=INTEGER},
-      <if test="mname != null">
-        #{mname,jdbcType=VARCHAR},
+      <if test="pid != null">
+        #{pid,jdbcType=INTEGER},
       </if>
-      <if test="mid != null">
-        #{mid,jdbcType=INTEGER},
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="icon != null">
+        #{icon,jdbcType=VARCHAR},
+      </if>
+      <if test="href != null">
+        #{href,jdbcType=VARCHAR},
+      </if>
+      <if test="target != null">
+        #{target,jdbcType=VARCHAR},
+      </if>
+      <if test="spread != null">
+        #{spread,jdbcType=INTEGER},
+      </if>
+      <if test="permission != null">
+        #{permission,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="sort != null">
+        #{sort,jdbcType=INTEGER},
+      </if>
+      <if test="ifdelete != null">
+        #{ifdelete,jdbcType=INTEGER},
+      </if>
+      <if test="createBy != null">
+        #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
@@ -142,11 +226,44 @@
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
       </if>
-      <if test="record.mname != null">
-        mname = #{record.mname,jdbcType=VARCHAR},
+      <if test="record.pid != null">
+        pid = #{record.pid,jdbcType=INTEGER},
       </if>
-      <if test="record.mid != null">
-        mid = #{record.mid,jdbcType=INTEGER},
+      <if test="record.title != null">
+        title = #{record.title,jdbcType=VARCHAR},
+      </if>
+      <if test="record.icon != null">
+        icon = #{record.icon,jdbcType=VARCHAR},
+      </if>
+      <if test="record.href != null">
+        href = #{record.href,jdbcType=VARCHAR},
+      </if>
+      <if test="record.target != null">
+        target = #{record.target,jdbcType=VARCHAR},
+      </if>
+      <if test="record.spread != null">
+        spread = #{record.spread,jdbcType=INTEGER},
+      </if>
+      <if test="record.permission != null">
+        permission = #{record.permission,jdbcType=VARCHAR},
+      </if>
+      <if test="record.type != null">
+        type = #{record.type,jdbcType=INTEGER},
+      </if>
+      <if test="record.status != null">
+        status = #{record.status,jdbcType=INTEGER},
+      </if>
+      <if test="record.sort != null">
+        sort = #{record.sort,jdbcType=INTEGER},
+      </if>
+      <if test="record.ifdelete != null">
+        ifdelete = #{record.ifdelete,jdbcType=INTEGER},
+      </if>
+      <if test="record.createBy != null">
+        create_by = #{record.createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createTime != null">
+        create_time = #{record.createTime,jdbcType=TIMESTAMP},
       </if>
     </set>
     <if test="_parameter != null">
@@ -156,8 +273,19 @@
   <update id="updateByExample" parameterType="map">
     update menu
     set id = #{record.id,jdbcType=INTEGER},
-      mname = #{record.mname,jdbcType=VARCHAR},
-      mid = #{record.mid,jdbcType=INTEGER}
+      pid = #{record.pid,jdbcType=INTEGER},
+      title = #{record.title,jdbcType=VARCHAR},
+      icon = #{record.icon,jdbcType=VARCHAR},
+      href = #{record.href,jdbcType=VARCHAR},
+      target = #{record.target,jdbcType=VARCHAR},
+      spread = #{record.spread,jdbcType=INTEGER},
+      permission = #{record.permission,jdbcType=VARCHAR},
+      type = #{record.type,jdbcType=INTEGER},
+      status = #{record.status,jdbcType=INTEGER},
+      sort = #{record.sort,jdbcType=INTEGER},
+      ifdelete = #{record.ifdelete,jdbcType=INTEGER},
+      create_by = #{record.createBy,jdbcType=VARCHAR},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -165,19 +293,74 @@
   <update id="updateByPrimaryKeySelective" parameterType="edu.hunau.hyx.bean.Menu">
     update menu
     <set>
-      <if test="mname != null">
-        mname = #{mname,jdbcType=VARCHAR},
+      <if test="pid != null">
+        pid = #{pid,jdbcType=INTEGER},
       </if>
-      <if test="mid != null">
-        mid = #{mid,jdbcType=INTEGER},
+      <if test="title != null">
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="icon != null">
+        icon = #{icon,jdbcType=VARCHAR},
+      </if>
+      <if test="href != null">
+        href = #{href,jdbcType=VARCHAR},
+      </if>
+      <if test="target != null">
+        target = #{target,jdbcType=VARCHAR},
+      </if>
+      <if test="spread != null">
+        spread = #{spread,jdbcType=INTEGER},
+      </if>
+      <if test="permission != null">
+        permission = #{permission,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        type = #{type,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="sort != null">
+        sort = #{sort,jdbcType=INTEGER},
+      </if>
+      <if test="ifdelete != null">
+        ifdelete = #{ifdelete,jdbcType=INTEGER},
+      </if>
+      <if test="createBy != null">
+        create_by = #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="edu.hunau.hyx.bean.Menu">
     update menu
-    set mname = #{mname,jdbcType=VARCHAR},
-      mid = #{mid,jdbcType=INTEGER}
+    set pid = #{pid,jdbcType=INTEGER},
+      title = #{title,jdbcType=VARCHAR},
+      icon = #{icon,jdbcType=VARCHAR},
+      href = #{href,jdbcType=VARCHAR},
+      target = #{target,jdbcType=VARCHAR},
+      spread = #{spread,jdbcType=INTEGER},
+      permission = #{permission,jdbcType=VARCHAR},
+      type = #{type,jdbcType=INTEGER},
+      status = #{status,jdbcType=INTEGER},
+      sort = #{sort,jdbcType=INTEGER},
+      ifdelete = #{ifdelete,jdbcType=INTEGER},
+      create_by = #{createBy,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <select id="selectAllMenu"  resultType="java.util.HashMap">
+   SELECT
+	id,pid,title,icon,href,target,spread,sort,permission
+FROM
+	menu
+WHERE
+	ifdelete = 1
+ORDER BY
+	sort
+  </select>
+
 </mapper>

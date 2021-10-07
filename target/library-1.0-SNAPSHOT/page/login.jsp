@@ -67,7 +67,7 @@
 <div class="main-body">
     <div class="login-main">
         <div class="login-top">
-            <span>LayuiMini后台登录</span>
+            <span>图书管理系统</span>
             <span class="bg1"></span>
             <span class="bg2"></span>
         </div>
@@ -147,29 +147,25 @@
                 layer.msg('验证码不能为空');
                 return false;
             }
-            layer.msg('登录成功', function () {
-                if(username!="" && password!=""){
-                    $.ajax({
-                        url :"/user/login",
-                        type : "post",
-                        data : {UserName:username, PassWord:password},
-                        dataType:"json",
-                        contentType :"application/x-www-form-urlencoded; charset=UTF-8",
-                        success : function(data){
-                            if(data.status == 200){
-                                window.location.href="/";
-                            }
-                            else if(data.status == 400){
-                                $.messager.alert('提示',data.msg);
-                            }
-                        },
-                        error : function(e){
-                            $.messager.alert('提示',"用户登录失败！");
-                        },
-                    });
+            $.ajax({
+                //几个参数需要注意一下
+                type: "POST",//方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                url: "/login" ,//url
+                data: data,
+                success: function (data) {
+                    console.log(data);//打印服务端返回的数据(调试用)
+                    if (data.status == 200) {
+                        location.href='/home'
+                    }else{
+                        layer.msg(data.msg)
+                    };
+                },
+                error : function() {
+                    alert("异常！");
                 }
-
             });
+
             return false;
         });
     });

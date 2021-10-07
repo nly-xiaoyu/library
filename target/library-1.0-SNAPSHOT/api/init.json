@@ -25,7 +25,8 @@
               "title": "主页一",
               "href": "/page/welcome-1.html",
               "icon": "fa fa-tachometer",
-              "target": "_self"
+              "target": "_self",
+              "child":null
             },
             {
               "title": "主页二",

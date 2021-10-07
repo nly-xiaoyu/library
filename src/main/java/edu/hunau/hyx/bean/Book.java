@@ -9,6 +9,8 @@ public class Book {
 
     private String authoe;
 
+    private String bclass;
+
     private Double price;
 
     private Integer locnum;
@@ -16,6 +18,8 @@ public class Book {
     private String locarea;
 
     private String ramark;
+
+    private Integer bstatus;
 
     public Integer getId() {
         return id;
@@ -49,6 +53,14 @@ public class Book {
         this.authoe = authoe == null ? null : authoe.trim();
     }
 
+    public String getBclass() {
+        return bclass;
+    }
+
+    public void setBclass(String bclass) {
+        this.bclass = bclass == null ? null : bclass.trim();
+    }
+
     public Double getPrice() {
         return price;
     }
@@ -79,5 +91,13 @@ public class Book {
 
     public void setRamark(String ramark) {
         this.ramark = ramark == null ? null : ramark.trim();
+    }
+
+    public Integer getBstatus() {
+        return bstatus;
+    }
+
+    public void setBstatus(Integer bstatus) {
+        this.bstatus = bstatus;
     }
 }

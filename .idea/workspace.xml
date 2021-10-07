@@ -1,7 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b7594ef-0961-4566-816b-e9bc1e564590" name="Default Changelist" comment="" />
+    <list default="true" id="3b7594ef-0961-4566-816b-e9bc1e564590" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/controller/navController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/controller/pageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/service/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/api/admin.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/api/user.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/page/classquery.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StringTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/maptojsontest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/BookExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/BookExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/MenuExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/MenuExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/bean/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/controller/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/controller/userController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/mapper/MenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/hunau/hyx/mapper/MenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/hunau/hyx/mapper/BookMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/hunau/hyx/mapper/BookMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/edu/hunau/hyx/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/edu/hunau/hyx/mapper/MenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/api/init.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/api/init.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/hunau/hyx/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/hunau/hyx/mapper/MenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/configuration.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/AppointmentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/MenuMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/PremenuMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/PremitMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/bookMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/noticeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/edu/hunau/hyx/mapper/userMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/classes/redis.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/api/clear.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/api/init.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/api/menus.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/api/table.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/api/tableSelect.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/api/upload.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/css/layuimini.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/css/public.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/css/regiester/public.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/css/themes/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/images/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/images/captcha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/images/donate_qrcode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/images/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/images/icon-login.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/images/loginbg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/echarts/echarts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/echarts/echartsTheme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/iconPicker/iconPickerFa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/layarea/layarea.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/layuimini/miniAdmin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/layuimini/miniMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/layuimini/miniTab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/layuimini/miniTheme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/layuimini/miniTongji.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/regiester/cache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/step-lay/step.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/step-lay/step.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/tableSelect/tableSelect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/treetable-lay/treetable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/treetable-lay/treetable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/wangEditor/fonts/w-e-icon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/wangEditor/wangEditor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/wangEditor/wangEditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/wangEditor/wangEditor.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/wangEditor/wangEditor.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/js/lay-module/wangEditor/wangEditor.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/HELP-US-OUT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/jq-module/jquery.particleground.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/jq-module/paigusu.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/jq-module/zyupload/zyupload-1.0.0.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/jq-module/zyupload/zyupload-1.0.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/jquery-3.4.1/jquery-3.4.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/layui-v2.6.3/css/layui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/layui-v2.6.3/css/modules/code.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/layui-v2.6.3/css/modules/laydate/default/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/layui-v2.6.3/css/modules/layer/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/layui-v2.6.3/css/modules/layer/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/layui-v2.6.3/css/modules/layer/default/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/layui-v2.6.3/css/modules/layer/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/layui-v2.6.3/css/modules/layer/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/layui-v2.6.3/css/modules/layer/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/layui-v2.6.3/font/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/layui-v2.6.3/font/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/layui-v2.6.3/font/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/layui-v2.6.3/font/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/layui-v2.6.3/font/iconfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/lib/layui-v2.6.3/layui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/adminlogin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/area.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/button.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/color-select.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/editor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/form-step.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/icon-picker.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/icon.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/layer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/login-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/login-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/regiester.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/regiester.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/setting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/table-select.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/table/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/table/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/upload.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/user-password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/user-setting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/userLogin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/welcome-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/welcome-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springboot/page/welcome-3.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,12 +179,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="jsf" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -28,7 +198,6 @@
         <option name="localRepository" value="D:\tools\maven\jar" />
         <option name="mavenHome" value="D:/tools/maven/apache-maven-3.6.0" />
         <option name="userSettingsFile" value="D:\tools\maven\apache-maven-3.6.0\conf\settings.xml" />
-        <option name="workOffline" value="true" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -64,7 +233,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zoom620_netbook" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/edu/hunau/hyx/mapper" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -79,16 +248,17 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\java-ideacode\cbx20201202\library\src\main\webapp\page" />
-      <recent name="F:\java-ideacode\cbx20201202\library\src\main\webapp" />
-      <recent name="F:\java-ideacode\cbx20201202\library\src\main\resources" />
-      <recent name="F:\java-ideacode\cbx20201202\library\src\main\java" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\java-ideacode\cbx20201202\library\src\main\webapp\page" />
       <recent name="F:\java-ideacode\cbx20201202\library\src\main\webapp" />
       <recent name="F:\java-ideacode\cbx20201202\library\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\java-ideacode\cbx20201202\library\src\main\resources\edu\hunau\hyx\mapper" />
+      <recent name="F:\java-ideacode\cbx20201202\library\src\main\java\edu\hunau\hyx\mapper" />
+      <recent name="F:\java-ideacode\cbx20201202\library\src\main\java\edu\hunau\hyx\bean" />
+      <recent name="F:\java-ideacode\cbx20201202\library\src\main\webapp\api" />
+      <recent name="F:\java-ideacode\cbx20201202\library\src\main\webapp\page" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -102,6 +272,26 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MD5UtilTest" />
       <option name="METHOD_NAME" value="MD5UtilTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringTest.indexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="library" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StringTest" />
+      <option name="METHOD_NAME" value="indexTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="maptojsontest.maptest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="library" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="maptojsontest" />
+      <option name="METHOD_NAME" value="maptest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,6 +323,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.HelloApplication" />
+        <item itemvalue="JUnit.StringTest.indexTest" />
+        <item itemvalue="JUnit.maptojsontest.maptest" />
         <item itemvalue="JUnit.MD5UtilTest.MD5UtilTest" />
         <item itemvalue="JUnit.userSericeTest.userInsertTest" />
       </list>
@@ -181,7 +373,11 @@
       <workItem from="1632755477006" duration="1490000" />
       <workItem from="1632832072184" duration="7904000" />
       <workItem from="1632901071962" duration="8653000" />
-      <workItem from="1633072924504" duration="978000" />
+      <workItem from="1633072924504" duration="1117000" />
+      <workItem from="1633074080597" duration="593000" />
+      <workItem from="1633074707645" duration="5693000" />
+      <workItem from="1633159318506" duration="14088000" />
+      <workItem from="1633583420180" duration="1420000" />
     </task>
     <servers />
   </component>
@@ -189,70 +385,78 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="324" y="91" key="#Inspections" timestamp="1633076873804">
+      <screen x="0" y="0" width="1462" height="864" />
+    </state>
+    <state x="324" y="91" key="#Inspections/0.0.1462.864@0.0.1462.864" timestamp="1633076873804" />
     <state x="324" y="91" key="#Project_Structure" timestamp="1631091085033">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
     <state x="324" y="91" key="#Project_Structure/0.0.1462.864@0.0.1462.864" timestamp="1631091085033" />
-    <state x="537" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1632904588589">
+    <state x="537" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1633180635995">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state x="537" y="142" key="#com.intellij.ide.util.MemberChooser/0.0.1462.864@0.0.1462.864" timestamp="1632904588589" />
-    <state x="462" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1632905600425">
+    <state x="537" y="142" key="#com.intellij.ide.util.MemberChooser/0.0.1462.864@0.0.1462.864" timestamp="1633180635995" />
+    <state x="389" y="357" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1633076067834">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state x="462" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1462.864@0.0.1462.864" timestamp="1632905600425" />
+    <state x="389" y="357" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1462.864@0.0.1462.864" timestamp="1633076067834" />
+    <state x="462" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1633180362987">
+      <screen x="0" y="0" width="1462" height="864" />
+    </state>
+    <state x="462" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1462.864@0.0.1462.864" timestamp="1633180362987" />
     <state x="491" y="293" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1631543202384">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
     <state x="491" y="293" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1462.864@0.0.1462.864" timestamp="1631543202384" />
-    <state x="511" y="127" key="FileChooserDialogImpl" timestamp="1632833374052">
+    <state x="511" y="127" key="FileChooserDialogImpl" timestamp="1633584775828">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state x="511" y="127" key="FileChooserDialogImpl/0.0.1462.864@0.0.1462.864" timestamp="1632833374052" />
-    <state width="1419" height="343" key="GridCell.Tab.0.bottom" timestamp="1632924289718">
+    <state x="511" y="127" key="FileChooserDialogImpl/0.0.1462.864@0.0.1462.864" timestamp="1633584775828" />
+    <state width="1419" height="231" key="GridCell.Tab.0.bottom" timestamp="1633585357632">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state width="1419" height="343" key="GridCell.Tab.0.bottom/0.0.1462.864@0.0.1462.864" timestamp="1632924289718" />
-    <state width="1419" height="343" key="GridCell.Tab.0.center" timestamp="1632924289717">
+    <state width="1419" height="231" key="GridCell.Tab.0.bottom/0.0.1462.864@0.0.1462.864" timestamp="1633585357632" />
+    <state width="1419" height="231" key="GridCell.Tab.0.center" timestamp="1633585357631">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state width="1419" height="343" key="GridCell.Tab.0.center/0.0.1462.864@0.0.1462.864" timestamp="1632924289717" />
-    <state width="1419" height="343" key="GridCell.Tab.0.left" timestamp="1632924289716">
+    <state width="1419" height="231" key="GridCell.Tab.0.center/0.0.1462.864@0.0.1462.864" timestamp="1633585357631" />
+    <state width="1419" height="231" key="GridCell.Tab.0.left" timestamp="1633585357631">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state width="1419" height="343" key="GridCell.Tab.0.left/0.0.1462.864@0.0.1462.864" timestamp="1632924289716" />
-    <state width="1419" height="343" key="GridCell.Tab.0.right" timestamp="1632924289717">
+    <state width="1419" height="231" key="GridCell.Tab.0.left/0.0.1462.864@0.0.1462.864" timestamp="1633585357631" />
+    <state width="1419" height="231" key="GridCell.Tab.0.right" timestamp="1633585357631">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state width="1419" height="343" key="GridCell.Tab.0.right/0.0.1462.864@0.0.1462.864" timestamp="1632924289717" />
-    <state width="1419" height="343" key="GridCell.Tab.1.bottom" timestamp="1632924289719">
+    <state width="1419" height="231" key="GridCell.Tab.0.right/0.0.1462.864@0.0.1462.864" timestamp="1633585357631" />
+    <state width="1419" height="231" key="GridCell.Tab.1.bottom" timestamp="1633184839992">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state width="1419" height="343" key="GridCell.Tab.1.bottom/0.0.1462.864@0.0.1462.864" timestamp="1632924289719" />
-    <state width="1419" height="343" key="GridCell.Tab.1.center" timestamp="1632924289718">
+    <state width="1419" height="231" key="GridCell.Tab.1.bottom/0.0.1462.864@0.0.1462.864" timestamp="1633184839992" />
+    <state width="1419" height="231" key="GridCell.Tab.1.center" timestamp="1633184839992">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state width="1419" height="343" key="GridCell.Tab.1.center/0.0.1462.864@0.0.1462.864" timestamp="1632924289718" />
-    <state width="1419" height="343" key="GridCell.Tab.1.left" timestamp="1632924289718">
+    <state width="1419" height="231" key="GridCell.Tab.1.center/0.0.1462.864@0.0.1462.864" timestamp="1633184839992" />
+    <state width="1419" height="231" key="GridCell.Tab.1.left" timestamp="1633184839992">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state width="1419" height="343" key="GridCell.Tab.1.left/0.0.1462.864@0.0.1462.864" timestamp="1632924289718" />
-    <state width="1419" height="343" key="GridCell.Tab.1.right" timestamp="1632924289719">
+    <state width="1419" height="231" key="GridCell.Tab.1.left/0.0.1462.864@0.0.1462.864" timestamp="1633184839992" />
+    <state width="1419" height="231" key="GridCell.Tab.1.right" timestamp="1633184839992">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state width="1419" height="343" key="GridCell.Tab.1.right/0.0.1462.864@0.0.1462.864" timestamp="1632924289719" />
-    <state x="262" y="87" key="Maven.ArtifactSearchDialog" timestamp="1633073845443">
+    <state width="1419" height="231" key="GridCell.Tab.1.right/0.0.1462.864@0.0.1462.864" timestamp="1633184839992" />
+    <state x="262" y="87" key="Maven.ArtifactSearchDialog" timestamp="1633074674319">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state x="262" y="87" key="Maven.ArtifactSearchDialog/0.0.1462.864@0.0.1462.864" timestamp="1633073845443" />
-    <state x="140" y="149" key="SettingsEditor" timestamp="1632833443812">
+    <state x="262" y="87" key="Maven.ArtifactSearchDialog/0.0.1462.864@0.0.1462.864" timestamp="1633074674319" />
+    <state x="158" y="98" key="SettingsEditor" timestamp="1633074581670">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state x="140" y="149" key="SettingsEditor/0.0.1462.864@0.0.1462.864" timestamp="1632833443812" />
-    <state x="428" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1633073335861">
+    <state x="158" y="98" key="SettingsEditor/0.0.1462.864@0.0.1462.864" timestamp="1633074581670" />
+    <state x="428" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1633584766596">
       <screen x="0" y="0" width="1462" height="864" />
     </state>
-    <state x="428" y="256" key="com.intellij.ide.util.TipDialog/0.0.1462.864@0.0.1462.864" timestamp="1633073335861" />
+    <state x="428" y="256" key="com.intellij.ide.util.TipDialog/0.0.1462.864@0.0.1462.864" timestamp="1633584766596" />
     <state x="541" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1633073871791">
       <screen x="0" y="0" width="1462" height="864" />
     </state>

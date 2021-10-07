@@ -44,15 +44,13 @@ public class userController {
             String newpassward = buffer.append("library").toString();
             newpassward = new MD5Util().stringMD5(newpassward);
             user.setPassword(newpassward);
-            user.setPid(0);
+            user.setPid(1);
             userService.insertUser(user);
             resp.setMsg("注册成功");
             resp.setStatus(200);
         }
         return new ResponseEntity<Response>(resp, HttpStatus.OK);
-
     }
-
     //用户登录
     @PostMapping("/login")
     public ResponseEntity<Response> userLogin(User user , HttpServletRequest request,HttpServletResponse response ,HttpSession session )throws Exception{
@@ -77,19 +75,25 @@ public class userController {
                 resp.setMsg("用户名或者密码错误");
                 resp.setStatus(400);
             }
-
         }else{
             resp.setMsg("用户不存在");
             resp.setStatus(400);
         }
         return new ResponseEntity<Response>(resp, HttpStatus.OK);
-
+    }
+    @GetMapping("/getuser")
+    public ResponseEntity<User> getUser(HttpSession session, HttpServletRequest request,HttpServletResponse response){
+        User user = (User) session.getAttribute("User");
+        return new ResponseEntity<User>(user, HttpStatus.OK);
     }
     //用户退出登录
     @GetMapping("/user/logout")
-    public ModelAndView userLogout (HttpServletRequest request,HttpServletResponse response)throws Exception {
+    public ModelAndView userLogout (HttpSession session, HttpServletRequest request,HttpServletResponse response)throws Exception {
         //清除登录信息
-        request.getParameterMap().clear();
+        Object user = session.getAttribute("User");
+        if(user!=null){
+            session.invalidate();
+        }
         ModelAndView mv = new ModelAndView("redirect:/index.html");
         return mv;
     }
